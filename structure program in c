@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+struct employee {
+    int eid;
+    char ename[25];
+    char edoj[10];
+};
+
+int main()
+{
+    struct employee edata[5];
+    
+    printf("Enter Employee details : \n");
+    for (int i = 0; i < 5; i++)
+    {
+        printf("*****Employee %d *****\n", i + 1);
+        printf("Enter Employee ID : ");
+        scanf("%d", &edata[i].eid);
+        printf("Enter Employee NAME - ");
+        scanf("%s", edata[i].ename);
+        printf("Enter Employee DATE OF JOINING (DD/MM/YYYY) - ");
+        scanf("%s", edata[i].edoj);
+        printf("\n");
+    }
+    
+    printf("+----+-----------+-------------+---------------+\n");
+    printf("|S.No|employee id|employee name|date of joining|\n");
+    
+    
+   
+    
+
+    return 0;
+}
